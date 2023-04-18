@@ -83,6 +83,7 @@ flutter:
       fonts:
         - asset: assets/fonts/CircularStd-Bold.ttf
           weight: 700
+        - asset: assets/fonts/CircularStd-Black.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

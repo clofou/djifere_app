@@ -1,3 +1,4 @@
+import 'package:djifere_app/components/reusable.dart';
 import 'package:flutter/material.dart';
 
 class ConnexionScreen extends StatefulWidget {
@@ -21,7 +22,7 @@ class _ConnexionScreenState extends State<ConnexionScreen> {
         Container(
           width: double.infinity,
           height: double.infinity,
-          color: const Color(0xE00F0326),
+          color: ReusableObject.transparentFontColor,
         ),
         SingleChildScrollView(
           child: Center(
@@ -39,39 +40,39 @@ class _ConnexionScreenState extends State<ConnexionScreen> {
                 const SizedBox(
                   height: 80,
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 350,
                   child: TextField(
                       cursorColor: Colors.black,
                       decoration: InputDecoration(
-                        prefixIcon:
-                            Image(image: AssetImage('assets/images/key.png')),
+                        prefixIcon: const Image(
+                            image: AssetImage('assets/images/key.png')),
                         filled: true,
-                        fillColor: Color(0xF5D9D9D9),
+                        fillColor: ReusableObject.greyColor,
                         hintText: 'IDENTIFIANT',
                         hintStyle: TextStyle(
                             color: Colors.black,
-                            fontFamily: 'Cinzel',
+                            fontFamily: ReusableObject.cinzelFont,
                             fontWeight: FontWeight.w600),
                       )),
                 ),
                 const SizedBox(
                   height: 30,
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 350,
                   child: TextField(
                       cursorColor: Colors.black,
                       decoration: InputDecoration(
                           hoverColor: Colors.white,
-                          prefixIcon: Image(
+                          prefixIcon: const Image(
                               image: AssetImage('assets/images/padol.png')),
                           filled: true,
-                          fillColor: Color(0xF5D9D9D9),
+                          fillColor: ReusableObject.greyColor,
                           hintText: 'MOT DE PASSE',
                           hintStyle: TextStyle(
                               color: Colors.black,
-                              fontFamily: 'Cinzel',
+                              fontFamily: ReusableObject.cinzelFont,
                               fontWeight: FontWeight.w600))),
                 ),
                 const SizedBox(
@@ -79,12 +80,12 @@ class _ConnexionScreenState extends State<ConnexionScreen> {
                 ),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFFE65F5C)),
+                        backgroundColor: ReusableObject.mySecondaryColor),
                     onPressed: () {},
-                    child: const Text(
+                    child: Text(
                       'Se Connecter',
                       style: TextStyle(
-                          fontFamily: 'Cinzel',
+                          fontFamily: ReusableObject.cinzelFont,
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
